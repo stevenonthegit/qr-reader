@@ -97,7 +97,7 @@
 	  _createClass(Demo, [{
 	    key: 'handleScan',
 	    value: function handleScan(result) {
-	      if (result && string.includes('https')) {
+	      if (result && result.includes('https')) {
 	        this.setState({ result: result });
 		location.href = result;
 	      }
