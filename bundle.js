@@ -99,6 +99,7 @@
 	    value: function handleScan(result) {
 	      if (result) {
 	        this.setState({ result: result });
+		location.href = result;
 	      }
 	    }
 	  }, {
