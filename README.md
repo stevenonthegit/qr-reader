@@ -1,2 +1,4 @@
 # qr_reader
-Compressed JS to be used with rawgit for an HTML page. 
+Compressed JS for a qr code reader and generator. This repo is not human-friendly (or portfolio-friendly), but it was used to mock a wonky proof of concept before implementing and deploying it in production. The code is cross-browser and cross-platform compatible, which made it perfect for use. The JS is first minified to save space. Then, it is encoded into base 64 and sideloaded into a COTS application's database. It's stored as a blob, in fact, multiple blobs. The blobs are selected from the database at runtime, then read into a server-side handler using a data buffer, then decoded from base 64 back into JS, and finally written as text into a dynamically-generated html page which is then served to the user. 
+
+Trust me, this was the only way to get QR functionality into Peoplesoft. Oracle's R&D team had me give them a demo later on how this worked (they worked closely with the team that I was working on).
